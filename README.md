@@ -2,6 +2,8 @@
 
 A vaporwave-themed markdown note-taking desktop app built with Tauri, React, and CodeMirror.
 
+<video src="VaporNotesDemo.mp4" width="100%"></video>
+
 ## Features
 
 **Editor**
