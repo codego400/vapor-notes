@@ -1,0 +1,112 @@
+.lock-active {
+  color: var(--color-neon-pink) !important;
+  border-color: var(--color-neon-pink) !important;
+}
+
+/* Modal overlay */
+.lock-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+
+.lock-modal {
+  background: var(--color-darker-bg);
+  border: 1px solid var(--color-mid-purple);
+  border-radius: 8px;
+  padding: 24px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.lock-modal-title {
+  font-family: var(--font-retro);
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--color-neon-pink);
+  text-align: center;
+}
+
+.lock-modal-desc {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.lock-modal-input {
+  width: 100%;
+  padding: 8px 12px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-text-primary);
+  background: transparent;
+  border: 1px solid var(--color-mid-purple);
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.lock-modal-input:focus {
+  border-color: var(--color-neon-pink);
+}
+
+.lock-modal-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.lock-modal-error {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-hot-pink);
+  text-align: center;
+  margin: -4px 0;
+}
+
+.lock-modal-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.lock-modal-btn {
+  flex: 1;
+  padding: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  border: 1px solid var(--color-mid-purple);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lock-modal-btn-cancel {
+  background: transparent;
+  color: var(--color-text-secondary);
+}
+
+.lock-modal-btn-cancel:hover {
+  background: var(--color-hover-bg, rgba(233, 52, 121, 0.1));
+}
+
+.lock-modal-btn-confirm {
+  background: transparent;
+  color: var(--color-neon-pink);
+  border-color: var(--color-neon-pink);
+}
+
+.lock-modal-btn-confirm:hover {
+  background: var(--color-hover-bg, rgba(233, 52, 121, 0.15));
+  box-shadow: var(--glow-pink);
+}

@@ -1,0 +1,99 @@
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 16px;
+}
+
+.empty-state-scene {
+  margin-bottom: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow:
+    0 0 30px var(--color-hover-bg, rgba(233, 52, 121, 0.3)),
+    0 0 60px var(--color-hover-bg, rgba(233, 52, 121, 0.15));
+  animation: glow-pulse 4s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.1); }
+}
+
+.empty-state-title {
+  font-family: var(--font-retro);
+  font-size: 16px;
+  letter-spacing: 4px;
+  background: linear-gradient(135deg, var(--color-neon-pink), var(--color-cyan), var(--color-sunset-orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.empty-state-subtitle {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
+
+.empty-state-new-btn {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  padding: 10px 28px;
+  border: 2px solid var(--color-neon-pink);
+  background: transparent;
+  color: var(--color-neon-pink);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.empty-state-new-btn:hover {
+  background: var(--color-hover-bg, rgba(233, 52, 121, 0.15));
+  box-shadow: var(--glow-pink);
+}
+
+.empty-state-input-row {
+  display: flex;
+  align-items: center;
+}
+
+.empty-state-input {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  padding: 10px 28px;
+  border: 2px solid var(--color-neon-pink);
+  background: transparent;
+  color: var(--color-text-primary);
+  border-radius: 4px;
+  outline: none;
+  width: 220px;
+  text-align: center;
+}
+
+.empty-state-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.empty-state-hint {
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.empty-state-hint kbd {
+  display: inline-block;
+  padding: 2px 6px;
+  border: 1px solid var(--color-mid-purple);
+  border-radius: 3px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-secondary);
+  background: var(--color-hover-bg, rgba(74, 14, 120, 0.2));
+}

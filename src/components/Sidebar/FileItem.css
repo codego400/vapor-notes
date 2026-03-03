@@ -1,0 +1,120 @@
+.file-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  transition: all 0.15s ease;
+  border-left: 2px solid transparent;
+  position: relative;
+}
+
+.file-item:hover {
+  color: var(--color-neon-pink);
+  text-shadow: var(--glow-pink);
+  background: rgba(233, 52, 121, 0.06);
+}
+
+.file-item--active {
+  color: var(--color-cyan);
+  text-shadow: var(--glow-cyan);
+  border-left-color: var(--color-cyan);
+  background: rgba(0, 212, 255, 0.05);
+}
+
+.file-item--active:hover {
+  color: var(--color-cyan);
+  text-shadow: var(--glow-cyan);
+}
+
+.file-item--dir {
+  color: var(--color-text-muted);
+  cursor: default;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-top: 12px;
+  padding-bottom: 4px;
+}
+
+.file-item--dir:hover {
+  color: var(--color-text-muted);
+  text-shadow: none;
+  background: none;
+}
+
+.file-item-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-item svg {
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.file-item--active svg {
+  opacity: 1;
+}
+
+.file-item-actions {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 2px;
+}
+
+.file-item-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 3px;
+  transition: color 0.15s ease;
+}
+
+.file-item-action-btn:hover {
+  color: var(--color-neon-pink);
+}
+
+.file-item-action-btn--delete:hover {
+  color: var(--color-hot-pink);
+}
+
+.file-item--dragging {
+  opacity: 0.4;
+}
+
+.drop-indicator {
+  height: 2px;
+  margin: 0 12px;
+  background: var(--color-cyan);
+  box-shadow: var(--glow-cyan);
+  border-radius: 1px;
+  pointer-events: none;
+  flex-shrink: 0;
+}
+
+.file-item-edit-input {
+  flex: 1;
+  background: transparent;
+  border: 1px solid var(--color-neon-pink);
+  border-radius: 3px;
+  outline: none;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-text-primary);
+  padding: 1px 6px;
+  min-width: 0;
+}

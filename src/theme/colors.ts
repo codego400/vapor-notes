@@ -1,0 +1,18 @@
+export const COLORS = {
+  deepPurple: "#300350",
+  midPurple: "#4A0E78",
+  hotPink: "#E93479",
+  neonPink: "#F62E97",
+  neonBlue: "#153CB4",
+  cyan: "#00D4FF",
+  sunsetOrange: "#F9AC53",
+  pastelLavender: "#C4A1FF",
+  pastelPink: "#FFB3D9",
+  darkBg: "#0D0221",
+  darkerBg: "#080118",
+  sidebarBg: "#120330",
+  editorBg: "#0F0225",
+  textPrimary: "#E8D5FF",
+  textSecondary: "#A88DC8",
+  textMuted: "#6B4D8A",
+} as const;

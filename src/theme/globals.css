@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --color-deep-purple: #300350;
+  --color-mid-purple: #4A0E78;
+  --color-hot-pink: #E93479;
+  --color-neon-pink: #F62E97;
+  --color-neon-blue: #153CB4;
+  --color-cyan: #00D4FF;
+  --color-sunset-orange: #F9AC53;
+  --color-pastel-lavender: #C4A1FF;
+  --color-pastel-pink: #FFB3D9;
+  --color-dark-bg: #0D0221;
+  --color-darker-bg: #080118;
+  --color-sidebar-bg: #120330;
+  --color-editor-bg: #0F0225;
+  --color-text-primary: #E8D5FF;
+  --color-text-secondary: #A88DC8;
+  --color-text-muted: #6B4D8A;
+
+  --font-retro: 'Press Start 2P', cursive;
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-body: 'Inter', -apple-system, sans-serif;
+
+  --sidebar-width: 260px;
+
+  --glow-pink: 0 0 10px rgba(233, 52, 121, 0.5), 0 0 20px rgba(233, 52, 121, 0.3);
+  --glow-cyan: 0 0 10px rgba(0, 212, 255, 0.5), 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-dark-bg);
+  color: var(--color-text-primary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-darker-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-mid-purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-hot-pink);
+}

@@ -1,0 +1,12 @@
+.file-tree {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-tree--dragging {
+  user-select: none;
+}
+
+.file-tree--dragging .file-item:not(.file-item--dir) {
+  cursor: grabbing;
+}
